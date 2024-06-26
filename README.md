@@ -42,5 +42,47 @@ DIRECTLY ACCESSABLE TO USE :
 * The server notifies both clients of the game outcome.    
 * The game session is terminated or reset based on the outcome.
 
+### Chess Game Project  
+├── public  
+│   └── chess.js  
+├── views  
+│   └── index.ejs  
+├── README.md  
+├── app.js  
+├── package.json  
+└── pckage-lock.json  
 
-  
+
+### Low Stack Overview  
+#### public  
+* chess.js:  
+   * Client-side JavaScript file responsible for handling the chess logic, move validation, and possibly some UI updates.  
+#### views
+* index.ejs:  
+   * EJS (Embedded JavaScript) template file that renders the HTML for the main game page. It may include the chessboard layout and integrate the client-side scripts.
+
+* package.json:  
+Configuration file for the Node.js project. It lists the project dependencies, scripts, and other metadata.   
+* pckage.json:  
+This appears to be a typo or a duplicate of package.json. It should be corrected or removed to avoid confusion.   
+
+
+# Installation 
+```bash
+git clone https://github.com/Itika-Bhatnagar/Online-Code-Editor.git  
+```
+
+## Run Locally
+
+```bash
+
+# install dependencies
+
+npm init -y
+npm i express chess.js ejs socket.io
+
+# start the dev server  
+
+npx nodemon
+```
+The application will be available at http://localhost:3000/
